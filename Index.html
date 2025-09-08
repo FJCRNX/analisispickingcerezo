@@ -213,8 +213,8 @@
             contentDiv.id = `tab-${year}`;
             contentDiv.className = `tab-content`;
             
-            const sinCursoTable = createTableHTML(`Tendencia SIN Salida de Material - ${year}`, summaryData[year].SIN_curso);
-            const conCursoTable = createTableHTML(`Tendencia CON Salida de Material - ${year}`, summaryData[year].CON_curso);
+            const sinCursoTable = createTableHTML(`Picking SIN Solicitud (Traspaso/Orden de Compra) - ${year}`, summaryData[year].SIN_curso);
+            const conCursoTable = createTableHTML(`Picking CON Solicitud (Traspaso/Orden de Compra) - ${year}`, summaryData[year].CON_curso);
             
             contentDiv.innerHTML = conCursoTable + sinCursoTable;
             tabContent.appendChild(contentDiv);
@@ -468,5 +468,6 @@
 </script>
 </body>
 </html>
+
 <p>&copy; FRANCISCO JAVIER CEREZO RAMOS</p>
 <a href="https://github.com/FJCRNX/analisispickingcerezo/raw/refs/heads/main/PLANTILLA%20PICKING%20V3.xlsx">Descargar Plantilla</a>
